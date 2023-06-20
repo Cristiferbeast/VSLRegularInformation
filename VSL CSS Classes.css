@@ -1,11 +1,31 @@
-.contrast {
-    background-color: #36454F; color: #ffffff
+.contrastH {
+    background-color: #36454F; color: #ffffff;
+    font-family: "Lato", Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
 }
+
 
 .sea {
-    background-color: #00DDFF; color: #000000
+    background-color: #00DDFF; color: #000000;
+    font-family:"Silver", 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
 }
 
-.highcontrast {
-    background-color: #000000; color: white
+.highcontrastB {
+    background-color: #000000; color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+p, h3, ul, li{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
