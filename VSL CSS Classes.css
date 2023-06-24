@@ -1,53 +1,57 @@
 .contrast h1 {
-    padding: 10px;
-    background-color: #381509; color: #ffffff;
-    font-family: "Lato", Georgia, 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-align: center;
+	padding: 10px;
+	background-color: #381509; color: #ffffff;
+	font-family: "Lato", Georgia, 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
 }
 
 .contrast li{
-    list-style-type: square;
-    list-style-position: outside;
+	list-style-type: square;
+	list-style-position: outside;
 }
 
 .contrast h2 {
-    padding: 10px;
-    background-color: #381509; color: #ffffff;
-    font-family: "Roboto", "Lato", Georgia, 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-align: center;
+	padding: 10px;
+	background-color: #381509; color: #ffffff;
+	font-family: "Roboto", "Lato", Georgia, 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
 }
 
 .contrast {
-    background-color: #222; color: white;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: #222; color: white;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .contrast a {
-    outline: none;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 1%;
-    text-align: center;
-    background-color: red;
-    padding: 10px;
-    box-sizing: border-box;
-    width:31%;
-    color: white;
+	outline: none;
+	text-decoration: none;
+	display: block;
+	margin-left: 1%;
+	text-align: center;
+	background-color: red;
+	padding: 10px;
+	box-sizing: border-box;
+	width:100%;
+	color: white;
 }
 
 .contrast a:hover{
-    background-color: tomato;
+	background-color: tomato;
 }
 
 
 .contrast table{
-    text-align: center;
-    border-collapse: collapse;
-    width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.contrast th{
+	background-color: rgb(54, 25, 19);
 }
 
 .contrast td, th {
@@ -55,20 +59,53 @@
   text-align: center;
 } 
 
+
 .sea {
-    background-color: #00DDFF; color: #000000;
-    font-family:"Silver", 'Times New Roman', Times, serif;
-    font-weight: bold;
-    text-align: center;
+	background-color: #00DDFF; color: #000000;
+	font-family:"Silver", 'Times New Roman', Times, serif;
+	font-weight: bold;
+	text-align: center;
 }
 
 p, h3, ul, li{
-    text-align: center;
+	text-align: center;
 }
 
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.content {
+	background-color: #2ca152;
+	color: white;
+	padding: 20px;
+	height: 200px;
+	flex: 3;
+}
+.side {
+	background-color: #e6e6a5;
+	padding: 20px;
+	flex: 1;
+}
+main {
+	display: flex;
+}
+
+.antibiotics-bar {
+  width: 0%;
+  height: 30px;
+  background-color: blue;
+  animation: fill-progress 36s linear infinite;
+}
+
+@keyframes fill-progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
