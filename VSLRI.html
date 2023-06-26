@@ -11,7 +11,7 @@
 		<img src="https://pbs.twimg.com/profile_images/1511495818599145472/N-JD9xDG_400x400.jpg" alt="Vigor Secrets and Lore Logo" class = contrast >
 		<h2 class = "contrast">Map Sizes</h2>
 		<p>Vigor Maps are measured using the markers which find the longest East-West and North-South combos on the Map. </p>	
-        <table>
+		<table>
 			<tr>
 				<th>Map</th>
 				<th>East</th>
@@ -32,7 +32,7 @@
 			</tr>
 			<tr>
 				<td>Fiske</td>
-				<td>480</td>]
+				<td>480</td>
 				<td>790</td>
 				<td>.379km<td>
 			</tr>
@@ -41,22 +41,50 @@
 				<td>580</td>
 				<td>840</td>
 				<td>.453km</td>
+			</tr>
+			<tr>
+				<td>Fjellkanten</td>
+				<td>480</td>
+				<td><b>1060</b></td>
+				<td>.508km</td>
+			</tr>
+            <tr>
+                <td>Kjerstin</td>
+                <td>800</td>
+                <td>660</td>
+                <td>.528km</td>
             </tr>
             <tr>
-                <td>Fjellkanten</td>
-                <td>480</td>
-                <td>1060</td>
-                <td>.508km</td>
+                <td>Anniken</td>
+                <td>768</td>
+                <td>690</td>
+                <td>.529km</td>
+            </tr>
+            <tr>
+                <td>Bridges</td>
+                <td>970</td>
+                <td>600</td>
+                <td>.582km</td>
+            </tr>
+            <tr>
+                <td>Viktorsen</td>
+                <td>860</td>
+                <td>770</td>
+                <td>.662km</td>
+            </tr>
+            <tr>
+                <td>Myren</td>
+                <td>850</td>
+                <td>910</td>
+                <td>.770km</td>
+            </tr>
+            <tr>
+                <td>Dverg</td>
+                <td><b>1360</b></td>
+                <td>810</td>
+                <td><b>1.101km</b></td>
             </tr>
 		</table> 
-		<ul>
-			<li><b>Kjerstin</b> 800x660m .528km </li>
-			<li><b>Anniken</b> 768x690m .529km </li>
-			<li><b>Bridges</b> 970x600m .582km </li>
-			<li><b>Viktorsen</b> 860x770m .662km </li>
-			<li><b>Myren</b> 850x910m .770km </li>
-			<li><b>Dverg</b> 1360x810m 1.101km</li>
-		</ul>
 		<h2 class = "contrast"> Speed and Timing Stats</h2>
 		<h3> Speed Stats </h3>
 		<p>Speeds of Characters has been measured in the past by VSL RI, Which found the following data regarding them</p>
@@ -76,11 +104,17 @@
 			<li> 12:00 Radiation Inbound </li>
 			<li> 20:00 Forced Exit From Encounter </li>
 		</ul>
-        <h1 class = "contrast"> Materials </h1>
-        <p>Material Reinbursement is Equal to 20% of Loadout Costs and 100% of Material Gathered Costs </p>
-        <h1 class = "contrast"> Heals </h1>
-        <p> Antibiotics heal at a rate of 4 hp per 36 ticks, Below is a Demonstration of Roughly how Antibiotics heal </p>
-        <div class="antibiotics-bar"></div>
+		<h1 class = "contrast"> Materials </h1>
+		<p>Material Reinbursement is Equal to 20% of Loadout Costs and 100% of Material Gathered Costs </p>
+        <div>
+		    <input class = "contrast" type="number" id="firstInput" placeholder="Enter The Cost of Your Loadout" />
+            <input class = "contrast" type="number" id="secondInput" placeholder="Enter the Cost of the Loot"/>
+  		    <button class = "contrast" onclick="reinbursementVigor()">Reinbursement</button>
+  		    <p class = "contrast" id="resultOutput"></p>
+        </div>
+		<h1 class = "contrast"> Heals </h1>
+		<p> Antibiotics heal at a rate of 4 hp per 36 ticks, Below is a Demonstration of Roughly how Antibiotics heal </p>
+		<div class="antibiotics-bar"></div>
 	</body> 
 	<footer class = "sea">
 		<p> This Website is Built for Storing VSL Information in a more efficent standard </p>
